@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Public+Sans:wght@100&family=Red+Hat+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Dancing+Script:wght@700&family=Public+Sans:wght@100&family=Red+Hat+Display:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.sedan-cars {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+.suv-cars {
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury-cars {
+    background-color:hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+h1, p{
+    margin-top: 15px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+p {
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'Lexend Deca', sans-serif; 
+    font-weight: 400;
+    word-spacing: 2px;
+    margin-bottom: 70px;
+}
+
+.text-3 {
+    margin-bottom: 50px !important;
+}
+
+.sedan-cars,
+.suv-cars,
+.luxury-cars {
+    width: 15vw;
+    height: 60vh;
+}
+
+.card {
+    padding: 25px;
+    color: white;
+}
+
+button {
+    width: 110px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif; 
+    font-weight: 400;
+}
+button:hover {
+    color: white;
+}
+
+.btn-1 {
+    color: hsl(31, 77%, 52%);
+    font-weight: bold;
+}
+
+.btn-1:hover {
+    background-color: hsl(31, 77%, 52%) ;
+}
+
+.btn-2 {
+    color: hsl(184, 100%, 22%);
+    font-weight: bold;
+}
+
+.btn-2:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.btn-3
+{
+    color: hsl(179, 100%, 13%);
+    font-weight: bold;   
+}
+.btn-3:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+@media (max-width: 375px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .sedan-cars,
+    .suv-cars,
+    .luxury-cars {
+        width: 60vw;
+        height: 60vh;
+        margin: 20px 50px;
+        border-radius: 20px;
+    }
+    .text-3 {
+        margin-bottom: 70px !important;
+    }
+}
